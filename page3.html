@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style3.css">
+</head>
+
+<body>
+    <div class="container">
+        <img src="timeline.png" class="timeline-img" alt="Timeline">
+        <p class="text">Click meee!!</p>
+        <p class="heart">❤️</p>
+    </div>
+
+    <script>
+        const heart = document.querySelector(".heart");
+        const image = document.querySelector(".timeline-img");
+        const text = document.querySelector(".text");
+
+        heart.addEventListener("click", () => {
+            image.classList.add("show");
+            heart.classList.add("move");
+            text.textContent = "";
+        });
+    </script>
+</body>
+
+</html>

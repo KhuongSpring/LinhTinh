@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <img class="img1" src="dudu-boring.gif" alt="">
+    <p class="p1">Em nói thật hảaa? 😒</p>
+    <div>
+        <button class="btn1" onclick="window.location.href='page1.html'">
+            Không đâu em xạo đấy, cho em chọn lại đi 😏
+        </button>
+        <button class="btn2">Thật mà (Em không muốn đi với anh) 😿</button>
+    </div>
+
+    <script>
+        const btn = document.getElementsByClassName("btn2")[0];
+        const image = document.getElementsByClassName("img1")[0];
+
+        btn.addEventListener("click", function () {
+            if (btn.textContent === "Em trêu =)) Có rảnh nháa 😼") {
+                window.location.href = "page3.html";
+            }
+            image.src = "dudu-sad.gif";
+            btn.textContent = "Em trêu =)) Có rảnh nháa 😼";
+        });
+    </script>
+</body>
+
+</html>
